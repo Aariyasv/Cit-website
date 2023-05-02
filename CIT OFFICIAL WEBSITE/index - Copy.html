@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>
+      CIT WEBSITE DESIGN
+    </title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">    
+</head>
+  <body>
+      <section class="sub-header">
+       <nav>
+          <a href="index.html"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" oneclick="hidemenu()" ></i>
+           <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="index%20-%20Copy.html">ABOUT</a></li>
+               <li><a href="Course.html">COURSE</a></li>
+               <li><a href="blog.html">BLOG</a></li>
+               <li><a href="index%20-%20Copy%20-%20Copy.html">CONTACT</a></li>
+               
+           </ul>
+           </div>
+           <i class="fa fa-bars" oneclick="showMenu()"></i>
+       </nav>
+        <h1>About Us</h1>      
+      </section>
+      
+<section class="about-us">
+    <div class="row">
+    <div class="about-col">
+    <h1> CIT Chennai - Transforming Lives</h1>    
+    <p>
+        Chennai Institute of technology, the best engineering college in Chennai was established with the objective of providing quality technical education with adequate industrial exposure than any other engineering colleges in Chennai, caters the needs of the youth with its innovative teaching methods.
+
+Apart from interactive classroom scenario, periodic guest lectures by experts from industries and academic background provides thirst to the students to learn and to prepare for the ready-to-serve industrial requirements with uncompromised professional ethics.
+
+CIT has been approved by the AICTE, New Delhi, affiliated to Anna University Chennai.</p>    
+    <a href="" class="hero-btn red-btn">EXPLORE NOW</a>    
+        
+    </div>
+    <div class="about-col">
+    <img src="images/Automation-2022.jpg">
+    
+    </div>
+    </div>
+      
+</section>
+    <footer id="footer">
+      <h2>Copyright &copy; Chennai Institute Of Technology 2023. All rights reserved.</h2>
+    </footer>  
+      
+      
+      
+      
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+        
+          var hash = this.hash;
+
+         
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+             
+              window.location.hash = hash;
+            }
+          );
+        } 
+      });
+    });
+  </script>      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+
+
+
+  </body>
+</html>

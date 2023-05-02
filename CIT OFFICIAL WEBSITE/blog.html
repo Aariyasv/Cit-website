@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>
+      CIT WEBSITE DESIGN
+    </title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> 
+    <script type="text/javascript">
+    function savedata(){
+     const name = document.getElementById('name').value;
+    localStorage.setItem('name',name); 
+        const mail = document.getElementById('mail').value;
+    localStorage.setItem('mail',mail); 
+        const comment = document.getElementById('comment').value;
+    localStorage.setItem('comment',comment); 
+    }
+    const savedusername  = localStorage.getItem('name');
+    console.log(savedusername);
+        const savedmail  = localStorage.getItem('mail');
+    console.log(savedmail);
+        const savedcomment  = localStorage.getItem('comment');
+    console.log(savedcomment);
+        
+        
+        
+    </script>
+</head>
+  <body>
+      <section class="sub-header">
+       <nav>
+          <a href="index.html"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" oneclick="hidemenu()" ></i>
+           <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="index%20-%20Copy.html">ABOUT</a></li>
+               <li><a href="Course.html">COURSE</a></li>
+               <li><a href="blog.html">BLOG</a></li>
+               <li><a href="index%20-%20Copy%20-%20Copy.html">CONTACT</a></li>
+               
+           </ul>
+           </div>
+           <i class="fa fa-bars" oneclick="showMenu()"></i>
+       </nav>
+        <h1> Our Certificate And Online Programs for 2023</h1> 
+        
+      </section>
+     
+<section class="blog-content">
+      
+<div class="sp">
+    <div class="blog-left">
+    <img src="images/Startup.jpg">
+    <h2> Our Certificated Program for 2023</h2>
+    </div>
+    <p> G20 Startup20X is a talk event involving themes such as innovation, entrepreneurship, startups, incubation and inclusion & sustainability. It is a space for dialogue and engagement of stakeholders from diverse domains within the startup and entrepreneurship ecosystem.  It is global in nature in-terms of reach, extension, and support and addresses macroeconomic concerns of entrepreneurs as well. Hence, it is a global organisation representing global startup ecosystem and entrepreneurs, their challenges and success stories to G20 leaders. </p>  
+    <br>
+    <p>
+    Startup20 India will operate through Task Forces which are structured to develop key priorities and bring forward the topics in which recommendations would be formulated to support the startup ecosystems globally. Such recommendations would be conveyed through a communique to the G20 India presidency and taken up during the G20 Summit 2023.
+    </p>
+    </div>
+    <div class="comment-box">
+    <h3> Leave a Comment</h3>
+    <form class="comment-form">
+        <input type="text" placeholder="Enter Name" id="name">
+        <input type="text" placeholder="Enter Email" id="mail">
+        <textarea rows="5" placeholder="Your Comment" id="comment">
+        </textarea>
+        <button type="submit" class="gero-btn" onclick="savedata()">Post Comment</button>
+        </form>
+    
+    
+    </div>
+    
+        
+</section>
+
+      
+      
+    <footer id="footer">
+      <h2>Copyright &copy; Chennai Institute Of Technology 2023. All rights reserved.</h2>
+    </footer>  
+
+  </body>
+</html>
